@@ -1,0 +1,64 @@
+[debug] [2021-11-09T10:52:59.526Z] ----------------------------------------------------------------------
+[debug] [2021-11-09T10:52:59.528Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\remiv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init emulators
+[debug] [2021-11-09T10:52:59.528Z] CLI Version:   9.22.0
+[debug] [2021-11-09T10:52:59.528Z] Platform:      win32
+[debug] [2021-11-09T10:52:59.528Z] Node Version:  v15.7.0
+[debug] [2021-11-09T10:52:59.529Z] Time:          Tue Nov 09 2021 11:52:59 GMT+0100 (Central European Standard Time)
+[debug] [2021-11-09T10:52:59.529Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-09T10:52:59.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-09T10:52:59.567Z] > authorizing via signed-in user (remive26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\remiv\Desktop\KULeuven master toegepaste informatica\Distributed systems\project
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-09T10:53:27.561Z] > refreshing access token with scopes: []
+[debug] [2021-11-09T10:53:27.561Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-09T10:53:27.706Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 09 Nov 2021 10:53:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-09T10:53:27.715Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-09T10:53:28.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-11-09T10:53:28.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-11-09T10:53:47.929Z] ----------------------------------------------------------------------
+[debug] [2021-11-09T10:53:47.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\remiv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-09T10:53:47.930Z] CLI Version:   9.22.0
+[debug] [2021-11-09T10:53:47.930Z] Platform:      win32
+[debug] [2021-11-09T10:53:47.931Z] Node Version:  v15.7.0
+[debug] [2021-11-09T10:53:47.931Z] Time:          Tue Nov 09 2021 11:53:47 GMT+0100 (Central European Standard Time)
+[debug] [2021-11-09T10:53:47.931Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-09T10:53:47.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-09T10:53:47.970Z] > authorizing via signed-in user (remive26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\remiv\Desktop\KULeuven master toegepaste informatica\Distributed systems\project
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
