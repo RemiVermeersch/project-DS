@@ -1,6 +1,9 @@
 package be.kuleuven.distributedsystems.cloud.auth;
 
 import be.kuleuven.distributedsystems.cloud.entities.User;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -26,18 +29,12 @@ public class SecurityFilter extends OncePerRequestFilter {
         var session = WebUtils.getCookie(request, "session");
         if (session != null) {
             // TODO: (level 1) decode Identity Token and assign correct email and role
-            String[] chunks = session.getValue().split("\\.");
-            Base64.Decoder decoder = Base64.getDecoder();
+            DecodedJWT jwt = JWT.decode(session.getValue());
+            String email = jwt.getClaim("email").asString();
+            String role = jwt.getClaim("role").asString();
 
-            String header = new String(decoder.decode(chunks[0]));
-            String payload = new String(decoder.decode(chunks[1]));
-            ObjectMapper om = new ObjectMapper();
-            POJO root = om.readValue(payload, POJO.class);
-
-
-            var user = new User(root.email,  root.role);
+            var user = new User(email, role);
             // TODO: (level 2) verify Identity Token
-
 
 
             SecurityContext context = SecurityContextHolder.getContext();
