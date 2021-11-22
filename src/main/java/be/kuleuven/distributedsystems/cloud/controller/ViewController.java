@@ -8,10 +8,7 @@ import be.kuleuven.distributedsystems.cloud.entities.Ticket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDateTime;
@@ -159,7 +156,7 @@ public class ViewController {
                 Integer.toString(quotes.size()));
         modelAndView.addObject("manager", AuthController.getUser().isManager());
         var bookings = this.model.getAllBookings();
-
+        // TEST
         var shows = new HashMap<UUID, Show>();
         var seats = new HashMap<UUID, Seat>();
         for (var b : bookings) {
@@ -178,5 +175,10 @@ public class ViewController {
         modelAndView.addObject("shows", shows);
         modelAndView.addObject("bestCustomers", this.model.getBestCustomers());
         return modelAndView;
+    }
+
+    @PostMapping("/subscription")
+    public void subscription(@RequestBody String body){
+        System.out.println(body);
     }
 }
