@@ -176,9 +176,4 @@ public class ViewController {
         modelAndView.addObject("bestCustomers", this.model.getBestCustomers());
         return modelAndView;
     }
-
-    @PostMapping("/subscription")
-    public void subscription(@RequestBody String body){
-        System.out.println(body);
-    }
 }
